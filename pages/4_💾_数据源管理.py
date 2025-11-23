@@ -3,6 +3,7 @@ import os
 import time
 import datetime
 import subprocess
+import sys
 from utils.data_pipeline import DataPipeline
 from utils.model_engine import ModelEngine
 
@@ -78,7 +79,8 @@ with ingest_col2:
         try:
             with st.spinner(f"正在生成数据 (场景: {scenario_arg})..."):
                 # Run the generate_data.py script
-                result = subprocess.run(['python', 'generate_data.py', '--scenario', scenario_arg], capture_output=True, text=True)
+                # Use sys.executable to ensure we use the current environment's Python
+                result = subprocess.run([sys.executable, 'generate_data.py', '--scenario', scenario_arg], capture_output=True, text=True)
                 if result.returncode == 0:
                     st.success("模拟数据生成成功！")
                     if scenario_arg == 'crisis':
