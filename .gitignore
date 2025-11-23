@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+.env
+.venv/
+env/
+.DS_Store
+
+# Note: We are NOT ignoring data/ or mock_data/ for this MVP demo
+# so that the deployed app has pre-generated data and models.
