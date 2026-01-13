@@ -1,6 +1,8 @@
 # Profit-Copilot MVP
 
 **Profit-Copilot** is an AI-driven decision support system for manufacturing enterprises. It integrates multi-source data (IoT, Quality, Orders, Finance) to predict profit, analyze root causes, and simulate optimization strategies.
+<img width="1539" height="839" alt="image" src="https://github.com/user-attachments/assets/9537cbc3-1753-4c47-ba4e-8d885d23d24e" />
+
 
 ## Features
 
